@@ -1,0 +1,1 @@
+/* src/renderer/store 存放 Vue 项目的数据状态组件，用于在不同的 Vue 组件中共享数据 */

@@ -1,0 +1,1 @@
+/* src/renderer/component 放置公共组件，比如标题栏组件、菜单组件等 */
