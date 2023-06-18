@@ -14,6 +14,7 @@
     "@types/node": "^20.3.1",
     "@vitejs/plugin-vue": "^4.1.0",
     "electron": "^25.1.1",
+    "electron-builder": "^24.4.0",
     "typescript": "^5.0.2",
     "vite": "^4.3.9",
     "vite-plugin-optimizer": "^1.4.2",

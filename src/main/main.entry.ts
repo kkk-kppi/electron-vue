@@ -33,6 +33,7 @@ app.whenReady().then(() => {
       SetupDevTools(mainWindow)
       // load vite http url
       mainWindow.loadURL(process.argv[2])
+      
    } else {
       ElectronScheme.registerScheme();
       mainWindow.loadURL(`app://index.html`)

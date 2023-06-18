@@ -28,9 +28,9 @@ export let devPlugin = () => {
       /*
         通过监听server.httpServer的listening事件来判断httpServer是否已经成功启动
       */
-      server.httpServer.once("listening", () => {
+      server.httpServer?.once("listening", () => {
         let { spawn } = require("child_process");
-        let addressInfo = server.httpServer.address() as any;
+        let addressInfo = server.httpServer?.address() as any;
         console.log('addressInfo为：', addressInfo, addressInfo?.address !== '::', addressInfo?.address.includes('localhost'))
 
         // fix: 无法正确返回url的问题 addressInfo.address为'::', 这是为啥，node的原因吗？
