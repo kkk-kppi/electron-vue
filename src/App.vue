@@ -1,4 +1,13 @@
 <script setup lang="ts">
+// testing vue use node&electron modules
+import fs from 'fs'
+import { ipcRenderer } from "electron";
+import { onMounted } from "vue";
+onMounted(() => {
+  console.log(fs.writeFileSync);
+  console.log(ipcRenderer);
+});
+// templte default import
 import HelloWorld from './components/HelloWorld.vue'
 </script>
 
